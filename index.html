@@ -1,0 +1,63 @@
+<!-- trivia game html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- viewport support for responsive with bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- using some bootstrap for formatting this is link to bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- css for any bootstrap overrides or other styles -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- css for any bootstrap overrides or other styles -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Trivia Game</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- bootstrap jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Steve Tucker's Excellent Trivia Game</h1>
+    </div>
+
+    <!-- bootstrap for a grid with single row -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <div id="game">
+              <p id="timeLeft">Time Remaining: <span id="timer"></span></p>
+              <p id="question"></p>
+            </div>
+            <div id="answers"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div id="choices">
+            <button id="begin" class="btn btn-info btn-lg">Start Game</button>
+            <div id="options"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- javascript and jquery -->
+  <script src="./assets/javascript/game.js"></script>
+
+
+
+</body>
+
+<!-- footer -->
+<footer class="fixed-bottom">
+  <h3>created by Steve Tucker</h3>
+</footer>
+
+</html>
